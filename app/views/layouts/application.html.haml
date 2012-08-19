@@ -9,8 +9,8 @@
       :javascript
         try{Typekit.load();}catch(e){}
     = yield :head
-    /[if IE]
-      = javascript_include_tag 'html5'
+    / /[if IE]
+    /   = javascript_include_tag 'html5'
   %body
 
     = render 'flashes'
