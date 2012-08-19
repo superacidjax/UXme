@@ -1,19 +1,42 @@
-#header
-  %ul.navigation
-    %li
-      = link_to 'About', '#'
-    %li
-      = link_to 'Projects', '#'
-    %li
-      = link_to 'Process', '#'
-    %li
-      = link_to 'Contact', '#'
+%header
+  .container
+    .logo
+      %img
+        = image_tag "uxme_iceberg_small.png"
+      %h1
+        UX
+        %span
+          me.
+      %h2
+        designing beautiful experiences
+    %ul.navigation
+      %li
+        = link_to 'About', '#'
+      %li
+        = link_to 'Projects', '#'
+      %li
+        = link_to 'Process', '#'
+      %li
+        = link_to 'Contact', '#'
 
-%h1
-  UX
-  %span
-    me.
-%h2
-  designing beautiful experiences
-%p
-  a ruby-on-rails and user experience design consultancy
+%content
+  #headline-section
+    .container
+      .hemingway
+        %h3
+          If a designer of web applications knows enough about what he's trying to communicate, he may omit things that he knows and the user will have a feeling of those things as strongly as though the designer has put them on the page. The dignity of movement of the iceberg is due to only one-eigth of it being above water.
+        %h4
+          &#8212; Ernest Hemingway (if he were a web developer)
+        %h1
+          We build icebergs.
+%footer
+  / %p
+  /   a ruby-on-rails and user experience design consultancy
+  / %footer
+  /   #testimonials
+  /     .thebox
+  /       %blockquote
+  /         %p
+  /           if ernest hemingway developed web applications, they'd look a lot like ours.
+  /         %p
+  /           minimal. expressive. effective.

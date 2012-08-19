@@ -4,69 +4,148 @@ body
   font-family: "Helvetica Neue", "Arial", sans-serif
   color: #3f3d32
 
-h1
-  text-align: center
-  font-family: "ff-enzo-web",sans-serif
-  font-size: 20em
-  display: inline-block
-  overflow: hidden
-  white-space: nowrap
-  color: #CD2626
-  span
-    color: #3f3d32
-    margin-left: -80px
-h2
-  font-family: "ff-tisa-sans-web-pro"
-  font-style: italic
-  font-weight: bold
-  text-align: center
-  font-size: 3em
-  padding-right: 2%
-p
-  padding-top: 1%
-  text-align: center
-  font-size: 1em
-  font-family: "ff-tisa-sans-web-pro"
+// Top Bar
 
-.img
-  text-align: center
-  padding-top: 10%
-
-#header
-  padding-top: 1em
-  ul.navigation
-    margin: auto
-    font-family: "ff-enzo-web",sans-serif
-    font-weight: 100
-    font-style: normal
-    li
-      display: block
+header
+  background-color:  #EDEDED
+  position: fixed
+  width: 100%
+  z-index: 9999
+  padding: 15px 0
+  .container
+    padding: 0 10px
+    .logo
+      width: 550px
       float: left
-      a
-        color: #3f3d32
-        border: 1px groove transparent
-        -moz-border-radius: 14px
-        -ms-border-radius: 14px
-        -o-border-radius: 14px
-        -webkit-border-radius: 14px
-        border-radius: 14px
+      img
+        float: left
+        padding: 0 12px 12px 12px
+      h1
+        font-family: "ff-enzo-web",sans-serif
         font-size: 2em
-        padding: 6px 20px
-        text-shadow: 1px 1px 1px #E5E5E5
-        text-transform: lowercase
-        -webkit-transition: all 0.4s ease
-        -moz-transition: all 0.4s ease
-        -o-transition: all 0.4s ease
-        transition: all 0.4s ease
-        vertical-align: middle
-        text-decoration: none
-      a:hover
-        border: 1px solid #e5e5e5
-        background-color: #ffffff
-        background-image: -moz-linear-gradient(top, #ffffff, #f7f7f7)
-        background-image: -ms-linear-gradient(top, #ffffff, #f7f7f7)
-        background-image: -o-linear-gradient(top, #ffffff, #f7f7f7)
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7))
-        background-image: -webkit-linear-gradient(top, #ffffff, #f7f7f7)
-        background-image: linear-gradient(top, #ffffff, #f7f7f7)
-        text-decoration: none
+        color: #CD2626
+        span
+          color: #3f3d32
+          margin-left: -5px
+      h2
+        margin-left: 36px
+        padding-top: 2px
+        font-family: "ff-tisa-sans-web-pro"
+        font-style: italic
+        font-weight: bold
+        font-size: 1em
+ul.navigation
+  float: right
+  margin: auto
+  font-family: "ff-enzo-web",sans-serif
+  font-weight: 100
+  font-style: normal
+  li
+    display: block
+    float: left
+    a
+      color: #3f3d32
+      border: 1px groove transparent
+      -moz-border-radius: 14px
+      -ms-border-radius: 14px
+      -o-border-radius: 14px
+      -webkit-border-radius: 14px
+      border-radius: 14px
+      font-size: 2em
+      padding: 6px 20px
+      text-shadow: 1px 1px 1px #E5E5E5
+      text-transform: lowercase
+      -webkit-transition: all 0.4s ease
+      -moz-transition: all 0.4s ease
+      -o-transition: all 0.4s ease
+      transition: all 0.4s ease
+      vertical-align: middle
+      text-decoration: none
+    a:hover
+      border: 1px solid #e5e5e5
+      background-color: #ffffff
+      background-image: -moz-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -ms-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -o-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7))
+      background-image: -webkit-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: linear-gradient(top, #ffffff, #f7f7f7)
+      text-decoration: none
+
+// Headline Section
+
+#headline-section
+  .container
+    padding-bottom: 0
+    .hemingway
+      padding-top: 250px
+      h1
+        font-family: "ff-tisa-sans-web-pro"
+        font-style: normal
+        font-weight: bold
+        text-align: center
+        font-size: 8em
+        padding-top: 12%
+      h3, h4
+        width: 800px
+        margin-left: auto
+        margin-right: auto
+      h3
+        font-family: "skolar", serif
+        font-size: 1.3em
+        font-weight: 400
+      h4
+        font-family: "skolar", serif
+        font-style: italic
+        text-align: right
+        padding-top: 9px
+        font-size: 1.3em
+
+  .headliner
+    padding-top: 300px
+    height: 595px
+    h2
+      font-family: "ff-tisa-sans-web-pro"
+      font-style: italic
+      font-weight: bold
+      text-align: center
+      font-size: 3em
+      padding-right: 2%
+footer
+  p
+    padding-top: 1%
+    text-align: center
+    font-size: 1em
+    font-family: "ff-tisa-sans-web-pro"
+
+  // footer
+  //   padding-top: 5%
+  //   width: 100%
+
+  // #testimonials
+  //   color: white
+  //   border-top: 3px solid white
+  //   border-bottom: 3px solid white
+  //   padding-bottom: 36px
+  //   .thebox
+  //   background-color: #CD2626
+  //   opacity: .8
+  //   padding: 1em
+  //   blockquote
+  //     border: none
+  //     margin: 0
+  //     padding: 0
+  //   p
+  //     font-weight: 300
+  //     font-size: 125%
+  //     min-height: 10px
+  //     font-family: "ff-enzo-web",sans-serif
+
+  // //   span
+  // //     color: #3f3d32
+  // //     margin-left: -80px
+
+
+  // .img
+  //   text-align: center
+  //   padding-top: 10%
