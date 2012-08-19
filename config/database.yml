@@ -1,0 +1,24 @@
+development:
+  adapter: postgresql
+  database: uxme_dev
+  username:
+  password:
+  host: localhost
+
+test: &TEST
+  adapter: postgresql
+  database: uxme_test
+  username:
+  password:
+  host: localhost
+  min_messages: warning
+
+production:
+  adapter: postgresql
+  database: uxme_prod
+  username:
+  password:
+  host: localhost
+
+cucumber:
+  <<: *TEST
