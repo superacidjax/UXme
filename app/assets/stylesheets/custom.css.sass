@@ -1,24 +1,65 @@
 $footer-height: 105px
 
 html, body
+  background-color: #F5F5F5
   height: 100%
   padding: 0
   margin: 0
 body
-  // padding-bottom: 10%
   #main
-  // background-color: #F5F5F5
-    background-color: #EDEDED
+    // background-color: #EDEDED
     font-family: "Helvetica Neue", "Arial", sans-serif
     color: #3f3d32
     min-height: 100%
     height: auto
     height: 100%
   .footer
+    opacity: .9
+    position: fixed
     height: 12%
-    position: absolute
     width: 100%
     bottom: 0
+
+#cta-button
+  text-align: center
+  padding-top: 5%
+  font-family: "ff-enzo-web",sans-serif
+  font-weight: 100
+  font-style: normal
+  width: 300px
+  margin-left: auto
+  margin-right: auto
+  li
+    display: block
+    float: left
+    a
+      color: #CD2626
+      border: 1px solid #e5e5e5
+      -moz-border-radius: 14px
+      -ms-border-radius: 14px
+      -o-border-radius: 14px
+      -webkit-border-radius: 14px
+      border-radius: 14px
+      font-size: 2em
+      padding: 6px 20px
+      text-shadow: 1px 1px 1px #E5E5E5
+      text-transform: uppercase
+      -webkit-transition: all 0.4s ease
+      -moz-transition: all 0.4s ease
+      -o-transition: all 0.4s ease
+      transition: all 0.4s ease
+      vertical-align: middle
+      text-decoration: none
+    a:hover
+      border: 1px groove transparent
+      background-color: #ffffff
+      background-image: -moz-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -ms-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -o-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7))
+      background-image: -webkit-linear-gradient(top, #ffffff, #f7f7f7)
+      background-image: linear-gradient(top, #ffffff, #f7f7f7)
+      text-decoration: none
 
 // Top Bar
 
@@ -95,9 +136,9 @@ ul.navigation
 
 #headline-section
   .container
-    padding-bottom: 0
+    padding-bottom: 12%
     .hemingway
-      padding-top: 250px
+      padding-top: 150px
       h1#icebergs
         display: none
         font-family: "ff-tisa-sans-web-pro"
@@ -105,7 +146,7 @@ ul.navigation
         font-weight: bold
         text-align: center
         font-size: 8em
-        padding-top: 12%
+        padding-top: 5%
       h3, h4, h5
         width: 800px
         margin-left: auto
@@ -128,9 +169,9 @@ ul.navigation
 #about-section
   display: none
   .container
-    padding-bottom: 0
+    padding-bottom: 12%
     .welovewhitespace
-      padding-top: 100px
+      padding-top: 40px
       width: 900px
       margin-left: auto
       margin-right: auto
@@ -169,9 +210,9 @@ ul.navigation
 #projects-section
   display: none
   .container
-    padding-bottom: 0
+    padding-bottom: 12%
     .weloveprojects
-      padding-top: 100px
+      padding-top: 40px
       width: 900px
       margin-left: auto
       margin-right: auto
@@ -210,9 +251,9 @@ ul.navigation
 #process-section
   display: none
   .container
-    padding-bottom: 0
+    padding-bottom: 12%
     .weloveprocess
-      padding-top: 100px
+      padding-top: 40px
       width: 900px
       margin-left: auto
       margin-right: auto
@@ -250,6 +291,7 @@ ul.navigation
         font-size: 2em
 .footer
   background-color: #EDEDED
+  position: relative
   h4
     padding-top: 2%
     text-align: center
