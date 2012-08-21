@@ -1,4 +1,6 @@
 Uxme::Application.routes.draw do
+
+  root to: 'pages#home'
   match '/ui(/:action)', controller: 'ui'
 
   get "pages/home"
