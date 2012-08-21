@@ -1,8 +1,24 @@
+$footer-height: 105px
+
+html, body
+  height: 100%
+  padding: 0
+  margin: 0
 body
+  // padding-bottom: 10%
+  #main
   // background-color: #F5F5F5
-  background-color: #EDEDED
-  font-family: "Helvetica Neue", "Arial", sans-serif
-  color: #3f3d32
+    background-color: #EDEDED
+    font-family: "Helvetica Neue", "Arial", sans-serif
+    color: #3f3d32
+    min-height: 100%
+    height: auto
+    height: 100%
+  .footer
+    height: 12%
+    position: absolute
+    width: 100%
+    bottom: 0
 
 // Top Bar
 
@@ -95,13 +111,11 @@ ul.navigation
         margin-left: auto
         margin-right: auto
       h3#typing
-        // display: none
         font-family: "skolar", serif
         font-size: 1.3em
         font-weight: 400
       h4
         display: none
-        float: left
         font-family: "skolar", serif
         font-style: italic
         text-align: right
@@ -110,8 +124,7 @@ ul.navigation
       h5#parens
         display: none
         font-family: "skolar", serif
-        float: right
-        text-align: center
+        text-align: right
 #about-section
   display: none
   .container
@@ -235,11 +248,17 @@ ul.navigation
         text-align: center
         padding-top: 5%
         font-size: 2em
-footer
+.footer
+  background-color: #EDEDED
+  h4
+    padding-top: 2%
+    text-align: center
+    font-size: 1em
+    font-family: "ff-tisa-sans-web-pro"
   p
     padding-top: 1%
     text-align: center
-    font-size: 1em
+    font-size: .8em
     font-family: "ff-tisa-sans-web-pro"
 
   // footer
