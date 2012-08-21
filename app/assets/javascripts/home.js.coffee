@@ -34,7 +34,7 @@ $(document).ready ->
     $("h5#parens").hide().delay(18500).fadeIn()
     $("h1#icebergs").hide().delay(20000).fadeIn()
     $.cookie "visited", "yes",
-      expires: 7
+      expires: 14
   if visited?
     $("#typing").fadeIn(200)
     $("h4#byline").fadeIn(200)
