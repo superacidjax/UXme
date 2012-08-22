@@ -1,25 +1,20 @@
 $(document).ready ->
-  $("li#cta").click ->
-    $("#quote-section").show 1000
-    $("#headline-section").fadeOut(100)
-    $("#projects-section").fadeOut(100)
-    $("#process-section").slideUp()
-
-$(document).ready ->
   $("li#about").click ->
     $("#about-section").fadeIn 1000
     $("#quote-section").fadeOut 200
     $("#headline-section").fadeOut 200
     $("#projects-section").fadeOut 200
-    $("#process-section").slideUp()
+    $("#process-section").fadeOut 200
+    $('#flash').fadeOut 300
 
 $(document).ready ->
-  $("li#projects").click ->
-    $("#projects-section").fadeIn 1000
+  $("li#contact").click ->
+    $("#contact-section").fadeIn 1000
     $("#quote-section").fadeOut 200
     $("#headline-section").fadeOut 200
     $("#about-section").fadeOut 200
-    $("#process-section").slideUp()
+    $("#process-section").fadeOut 200
+    $('#flash').fadeOut 300
 
 $(document).ready ->
   $("li#process").click ->
@@ -27,14 +22,16 @@ $(document).ready ->
     $("#quote-section").fadeOut 200
     $("#headline-section").fadeOut 200
     $("#about-section").fadeOut 200
-    $("#projects-section").fadeOut 200
+    $("#contact-section").fadeOut 200
+    $('#flash').fadeOut 300
 
 $(document).ready ->
   $("#logo").click ->
     $("#process-section").fadeIn 800
     $("#headline-section").hide()
     $("#about-section").hide()
-    $("#projects-section").hide()
+    $('#flash').hide()
+
 $(document).ready ->
   visited = $.cookie("visited")
   unless visited?
@@ -50,6 +47,8 @@ $(document).ready ->
     $("h5#parens").fadeIn(13000)
     $("h1#icebergs").fadeIn(200)
 
+clientSideValidations.validators.local["email_format"] = (element, options) ->
+  options.message  unless /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i.test(element.val())
 
 (($) ->
   shuffle = (a) ->

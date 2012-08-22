@@ -13,6 +13,6 @@
   %body
     #main
       = render 'layouts/header'
-      = render 'flashes'
+      = render 'layouts/flash', flash: flash
       = yield
     = render 'layouts/footer'

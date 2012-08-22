@@ -11,15 +11,15 @@
           even recommend other consultancies if your project is something that might be better served by another company. Even if you don't become
           our client, you're certainly become our friend!
     #form
-      - if quote.errors.any?
-        #error_explanation
-          %div
-            This form contains #{pluralize(quote.errors.count, "error")}
-          %ul
-            - quote.errors.full_messages.each do |msg|
-              %li
-                = msg
       = semantic_form_for(quote) do |f|
+        - if quote.errors.any?
+          #error_explanation
+            %div
+              This form contains #{pluralize(quote.errors.count, "error")}
+            %ul
+              - quote.errors.full_messages.each do |msg|
+                %li
+                  = msg
         = f.input :first_name, label: "First name *"
         = f.input :last_name, label: "Last name *"
         = f.input :company
@@ -28,3 +28,5 @@
         = f.input :project_description, label: "Project description *", as: :text, :input_html => { :class => 'autogrow', :rows => 10, :cols => 50  }
         = f.action :submit, label: "Send"
         = f.action :cancel, :as => :link, label: "cancel"
+        %br
+        %br

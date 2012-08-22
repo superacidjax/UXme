@@ -1,0 +1,40 @@
+#message_holder .flash {
+  // The landing page flash messages
+  margin: 1.5em 2em;
+}
+
+#error_explanation, .flash, div.ui-state-error, div.ui-state-highlight {
+  padding: 1.8em;
+  margin-bottom: 2em;
+  color: #3f3d32;
+  border: 2px solid #CD2626;
+  @include border-radius(14px);
+  font-weight: bold;
+  ul {
+    padding: 2%;
+    color: #CD2626;
+    li {
+      padding-top: 2%;
+    }
+  }
+}
+
+p.inline-errors {
+  display: none;
+}
+
+#error_explanation, .flash.error, div.ui-state-error {
+  background: $error-background;
+  color: #3f3d32;
+  border-color: #CD2626;
+  h2, a {
+    color: #3f3d32; }
+}
+
+.flash.notice, div.ui-state-highlight {
+  background: $notice-background;
+  color: $notice-text;
+  border-color: $notice-border;
+  a {
+    color: $notice-text; }
+}

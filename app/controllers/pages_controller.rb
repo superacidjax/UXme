@@ -1,20 +1,14 @@
 class PagesController < ApplicationController
 
-expose(:quote)
-
   def home
-    # quote = Quote.create
   end
 
   def about
   end
 
-  def projects
+  def contact
   end
 
-  # def process
-  # end
-
-  def contact
+  def thanks
   end
 end
