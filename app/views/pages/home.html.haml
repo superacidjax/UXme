@@ -11,8 +11,10 @@
         %h1#icebergs
           We build icebergs.
         #cta-button
-          %li
+          %li#cta
             = link_to "Get a quote now", '#'
+  #quote-section
+    = render partial: 'quotes/new', object: quote
   #about-section
     .container
       .welovewhitespace
@@ -31,9 +33,14 @@
           Our development philosophy is simple, what you leave off the page is as
           important as what you leave on. If Ernest Hemingway were a web
           developer, he'd work for us.
-        %p
-          We love whitespace. We love simple, bold and ultra-minimal. We use color
-          only when there is a good reason to do so.
+        %p.whitespace
+          We love whitespace.
+        #pullquote
+          %blockquote.pquote
+            %p
+              We love simple, bold and ultra-minimal.
+        %p.whitespace
+          We use color only when there is a good reason to do so.
         %p
           UXme. web applications are about speed, elegance and simplicity. If you
           want your site to look like Yahoo.com, don't contact us. If you want your
@@ -46,6 +53,10 @@
           and the developer of the best-selling iOS therapy app, #{link_to "iCouch CBT", "http://itunes.apple.com/us/app/icouch-cbt/id446115508?mt=8"}.
         %h2#simple
           Just because it's simple, doesn't mean it's easy.
+        #cta-button
+          %li#cta
+            = link_to "Get a quote now", '#'
+        %h2#simple
 #projects-section
   .container
     .weloveprojects

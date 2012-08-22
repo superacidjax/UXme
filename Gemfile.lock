@@ -69,6 +69,8 @@ GEM
       multi_json (~> 1.0)
     fabrication (2.2.2)
     ffi (1.1.5)
+    formtastic (2.2.1)
+      actionpack (>= 3.0)
     gherkin (2.11.2)
       json (>= 1.4.6)
     growl (1.0.3)
@@ -212,6 +214,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   fabrication
+  formtastic
   growl
   guard-rspec
   guard-spork

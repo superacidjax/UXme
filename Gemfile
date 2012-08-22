@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'hashrocket-rails'
+gem 'formtastic'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.8.rc2'

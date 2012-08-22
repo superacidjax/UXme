@@ -1,24 +1,33 @@
 $(document).ready ->
-  $("li#about").click ->
-    $("#about-section").fadeIn 1000
+  $("li#cta").click ->
+    $("#quote-section").show 1000
     $("#headline-section").fadeOut(100)
     $("#projects-section").fadeOut(100)
     $("#process-section").slideUp()
-    $("#simple").scrambledWriter()
+
+$(document).ready ->
+  $("li#about").click ->
+    $("#about-section").fadeIn 1000
+    $("#quote-section").fadeOut 200
+    $("#headline-section").fadeOut 200
+    $("#projects-section").fadeOut 200
+    $("#process-section").slideUp()
 
 $(document).ready ->
   $("li#projects").click ->
-    $("#projects-section").slideDown 100
-    $("#headline-section").slideUp()
-    $("#about-section").slideUp()
+    $("#projects-section").fadeIn 1000
+    $("#quote-section").fadeOut 200
+    $("#headline-section").fadeOut 200
+    $("#about-section").fadeOut 200
     $("#process-section").slideUp()
 
 $(document).ready ->
   $("li#process").click ->
-    $("#process-section").fadeIn 800
-    $("#headline-section").hide()
-    $("#about-section").hide()
-    $("#projects-section").hide()
+    $("#process-section").fadeIn 1000
+    $("#quote-section").fadeOut 200
+    $("#headline-section").fadeOut 200
+    $("#about-section").fadeOut 200
+    $("#projects-section").fadeOut 200
 
 $(document).ready ->
   $("#logo").click ->

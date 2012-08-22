@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
+
+expose(:quote)
+
   def home
+    # quote = Quote.create
   end
 
   def about

@@ -1,0 +1,30 @@
+%content
+  #request-quote-section
+    .container
+      .welovequotes
+        %h1
+          Request a quote
+        %p
+          UXme. typically works on a project basis, billed hourly. Regardless
+          of your budget, we'd love to discuss your project in detail. Even if
+          you don't end up as our client, we're always happy to provide free suggestions, advice and experienced guidance for your project. We'll
+          even recommend other consultancies if your project is something that might be better served by another company. Even if you don't become
+          our client, you're certainly become our friend!
+    #form
+      - if quote.errors.any?
+        #error_explanation
+          %div
+            This form contains #{pluralize(quote.errors.count, "error")}
+          %ul
+            - quote.errors.full_messages.each do |msg|
+              %li
+                = msg
+      = semantic_form_for(quote) do |f|
+        = f.input :first_name, label: "First name *"
+        = f.input :last_name, label: "Last name *"
+        = f.input :company
+        = f.input :email, as: :email, label: "Email *"
+        = f.input :phone_number, as: :phone
+        = f.input :project_description, label: "Project description *", as: :text, :input_html => { :class => 'autogrow', :rows => 10, :cols => 50  }
+        = f.action :submit, label: "Send"
+        = f.action :cancel, :as => :link, label: "cancel"
