@@ -2,10 +2,8 @@ class QuotesController < ApplicationController
 
 expose(:quote)
 
-  def request_quote
-  end
-
   def new
+    render :layout => 'quotes'
   end
 
   def index
@@ -14,7 +12,6 @@ expose(:quote)
 
   def create
     if quote.save
-      flash[:success] = 'Your request has been received. Thanks!'
       redirect_to thanks_path
       # RequesterMailer.request_quote_email(quote).deliver
     else

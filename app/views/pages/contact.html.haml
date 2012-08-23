@@ -1,2 +1,16 @@
-%h1 Pages#contact
-%p Find me in app/views/pages/contact.html.haml
+#contact-page
+  .container
+    .welovewhitespace
+      %h1#about
+        Contact
+        %span.ux#about
+          UX
+        %span#about
+          me.
+      %h2
+        = mail_to('brian@icouch.me', image_tag('envelope.jpg'))
+      %h2
+        = link_to image_tag('twitter.png'), 'http://twitter.com/superacidjax'
+      #cta-button
+        %li#cta
+          = link_to "Get a quote now", new_quote_path

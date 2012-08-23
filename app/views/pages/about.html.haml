@@ -1,2 +1,42 @@
-%h1 Pages#about
-%p Find me in app/views/pages/about.html.haml
+#about-page
+  .container
+    .welovewhitespace
+      %h1#about
+        About
+        %span.ux#about
+          UX
+        %span#about
+          me.
+      %p
+        UXme. is a web development and user experience design boutique. We
+        specialize in Ruby-on-Rails development of beautiful, powerful web
+        applications. We care about only one thing: your user. Every decision we
+        make is centered around your users, your customers.
+      %p
+        Our development philosophy is simple, what you leave off the page is as
+        important as what you leave on. If Ernest Hemingway were a web
+        developer, he'd work for us.
+      %p.whitespace
+        We love whitespace.
+      #pullquote
+        %blockquote.pquote
+          %p
+            We love simple, bold and ultra-minimal.
+      %p.whitespace
+        We use color only when there is a good reason to do so.
+      %p
+        UXme. web applications are about speed, elegance and simplicity. If you
+        want your site to look like Yahoo.com, don't contact us. If you want your
+        site to have to simple elegance of the Google home page, then we should
+        talk. If you need help turning your great idea into something beautiful,
+        then we'd love to help.
+      %p
+        UXme. was founded by Brian Dear, a New York City UX and Ruby-on-Rails
+        consultant. He is the cofounder of #{link_to "iCouch.me", "http://icouch.me"}
+        and the developer of the best-selling iOS therapy app, #{link_to "iCouch CBT", "http://itunes.apple.com/us/app/icouch-cbt/id446115508?mt=8"}.
+      %h2#simple
+        Just because it's simple, doesn't mean it's easy.
+      #cta-button
+        %li#cta
+          = link_to "Get a quote now", new_quote_path
+      %h2#simple

@@ -47,9 +47,6 @@ $(document).ready ->
     $("h5#parens").fadeIn(13000)
     $("h1#icebergs").fadeIn(200)
 
-clientSideValidations.validators.local["email_format"] = (element, options) ->
-  options.message  unless /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i.test(element.val())
-
 (($) ->
   shuffle = (a) ->
     i = a.length
