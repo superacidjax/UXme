@@ -1,4 +1,3 @@
-$footer-height: 105px
 @import "base"
 @import "flash"
 
@@ -7,7 +6,11 @@ html, body
   height: 100%
   padding: 0
   margin: 0
+
+html
+  font-size: 16px
 body
+  font-size: 62.5%
   #main
     // background-color: #EDEDED
     font-family: "ff-tisa-sans-web-pro"
@@ -18,12 +21,13 @@ body
   .footer
     opacity: .9
     position: fixed
-    height: 12%
+    height: 9%
     width: 100%
     bottom: 0
 .container .twelve.columns
-  width: 700px
+  width: 70%
 #cta-button
+  white-space: nowrap
   text-align: center
   padding-top: 5%
   font-family: "ff-enzo-web",sans-serif
@@ -37,13 +41,13 @@ body
     float: left
     a
       color: #CD2626
-      border: 1px solid #e5e5e5
-      -moz-border-radius: 14px
-      -ms-border-radius: 14px
-      -o-border-radius: 14px
-      -webkit-border-radius: 14px
-      border-radius: 14px
-      font-size: 2em
+      border: .1em solid #e5e5e5
+      -moz-border-radius: 1.4em
+      -ms-border-radius: 1.4em
+      -o-border-radius: 1.4em
+      -webkit-border-radius: 1.4em
+      border-radius: 1.4em
+      font-size: 3em
       padding: 6px 20px
       text-shadow: 1px 1px 1px #E5E5E5
       text-transform: uppercase
@@ -54,7 +58,7 @@ body
       vertical-align: middle
       text-decoration: none
     a:hover
-      border: 1px groove transparent
+      border: .1em groove transparent
       background-color: #ffffff
       background-image: -moz-linear-gradient(top, #ffffff, #f7f7f7)
       background-image: -ms-linear-gradient(top, #ffffff, #f7f7f7)
@@ -71,29 +75,29 @@ header
   position: fixed
   width: 100%
   z-index: 9999
-  padding: 15px 0
+  padding: 15px 0 0 0
   .container
     padding: 0 10px
     .logo
-      width: 550px
+      width: 55%
       float: left
       img
         float: left
         padding: 0 12px 12px 12px
       h1
         font-family: "ff-enzo-web",sans-serif
-        font-size: 2em
+        font-size: 3.0em
         color: #CD2626
         span
           color: #3f3d32
-          margin-left: -5px
+          margin-left: -.1em
       h2
         margin-left: 36px
         padding-top: 2px
         font-family: "ff-tisa-sans-web-pro"
         font-style: italic
         font-weight: bold
-        font-size: 1em
+        font-size: 1.5em
       a
         text-decoration: none
         color: inherit
@@ -103,18 +107,19 @@ ul.navigation
   font-family: "ff-enzo-web",sans-serif
   font-weight: 100
   font-style: normal
+  padding-top: 12px
   li
     display: block
     float: left
     a
       color: #3f3d32
-      border: 1px groove transparent
-      -moz-border-radius: 14px
-      -ms-border-radius: 14px
-      -o-border-radius: 14px
-      -webkit-border-radius: 14px
-      border-radius: 14px
-      font-size: 2em
+      border: .1em groove transparent
+      -moz-border-radius: 1.4em
+      -ms-border-radius: 1.4em
+      -o-border-radius: 1.4em
+      -webkit-border-radius: 1.4em
+      border-radius: 1.4em
+      font-size: 2.3em
       padding: 6px 20px
       text-shadow: 1px 1px 1px #E5E5E5
       text-transform: lowercase
@@ -125,7 +130,7 @@ ul.navigation
       vertical-align: middle
       text-decoration: none
     a:hover
-      border: 1px solid #e5e5e5
+      border: .1em solid #e5e5e5
       background-color: #ffffff
       background-image: -moz-linear-gradient(top, #ffffff, #f7f7f7)
       background-image: -ms-linear-gradient(top, #ffffff, #f7f7f7)
@@ -151,44 +156,46 @@ ul.navigation
         font-size: 8em
         padding-top: 5%
       h3, h4, h5
-        width: 800px
+        width: 70%
         margin-left: auto
         margin-right: auto
       h3#typing
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2em
         font-weight: 400
       h4
         display: none
         font-family: "skolar", serif
         font-style: italic
         text-align: right
-        padding-top: 9px
-        font-size: 1.3em
+        padding-top: 2%
+        font-size: 2em
       h5#parens
         display: none
+        font-size: 1.8em
         font-family: "skolar", serif
         text-align: right
+
 #about-section
   display: none
   .container
     padding-bottom: 12%
     .welovewhitespace
-      padding-top: 40px
-      width: 900px
+      padding-top: 40px //IMPORTANT
+      width: 70%
       margin-left: auto
       margin-right: auto
       #pullquote
         padding: 5%
         .pquote
           box-shadow: 10px 10px 30px #9b8a90
-          padding: 3%
+          padding: 5%
           text-align: center
-          font-size: 2em
+          font-size: 1.2em
           background: #3f3d32
-          -moz-border-radius: 30px
-          -webkit-border-radius: 30px
-          border-radius: 30px
+          -moz-border-radius: 50%
+          -webkit-border-radius: 50%
+          border-radius: 50%
           p
             color: white
       h1#about
@@ -196,14 +203,14 @@ ul.navigation
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux#about
         font-family: "ff-enzo-web",sans-serif
         font-style: normal
         font-weight: bold
-        margin-left: 1px
+        margin-left: .1em
         font-size: 1.2em
         padding-top: 12%
         color: #CD2626
@@ -213,40 +220,42 @@ ul.navigation
         margin-left: -5px
       p
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2.3em
         font-weight: 400
         margin-top: 18px
         padding-bottom: 2%
       p.whitespace
         padding: 5%
+        font-size: 2.5em
         text-align: center
       h2
         padding-top: 5%
         font-family: "ff-tisa-sans-web-pro"
         text-align: center
         padding-bottom: 5%
-        font-size: 2em
+        font-size: 3.5em
         a
           text-decoration: none
+
 #about-page
   .container
     padding-bottom: 12%
     .welovewhitespace
-      padding-top: 40px
-      width: 900px
+      padding-top: 40px //IMPORTANT
+      width: 70%
       margin-left: auto
       margin-right: auto
       #pullquote
         padding: 5%
         .pquote
           box-shadow: 10px 10px 30px #9b8a90
-          padding: 3%
+          padding: 5%
           text-align: center
-          font-size: 2em
+          font-size: 1.2em
           background: #3f3d32
-          -moz-border-radius: 30px
-          -webkit-border-radius: 30px
-          border-radius: 30px
+          -moz-border-radius: 50%
+          -webkit-border-radius: 50%
+          border-radius: 50%
           p
             color: white
       h1#about
@@ -254,14 +263,14 @@ ul.navigation
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux#about
         font-family: "ff-enzo-web",sans-serif
         font-style: normal
         font-weight: bold
-        margin-left: 1px
+        margin-left: .1em
         font-size: 1.2em
         padding-top: 12%
         color: #CD2626
@@ -271,19 +280,20 @@ ul.navigation
         margin-left: -5px
       p
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2.3em
         font-weight: 400
         margin-top: 18px
         padding-bottom: 2%
       p.whitespace
         padding: 5%
+        font-size: 2.5em
         text-align: center
       h2
         padding-top: 5%
         font-family: "ff-tisa-sans-web-pro"
         text-align: center
         padding-bottom: 5%
-        font-size: 2em
+        font-size: 3.5em
         a
           text-decoration: none
 
@@ -299,7 +309,7 @@ ul.navigation
         padding-right: 5%
         padding-top: 5%
       padding-top: 40px
-      width: 900px
+      width: 70%
       margin-left: auto
       margin-right: auto
       h1
@@ -307,14 +317,14 @@ ul.navigation
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux
         font-family: "ff-enzo-web",sans-serif
         font-style: normal
         font-weight: bold
-        margin-left: 1px
+        margin-left: .1em
         font-size: 1.2em
         padding-top: 12%
         color: #CD2626
@@ -325,7 +335,7 @@ ul.navigation
       p
         clear: both
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2.3em
         font-weight: 400
         margin-top: 18px
         padding-bottom: 2%
@@ -334,7 +344,7 @@ ul.navigation
         font-family: "ff-tisa-sans-web-pro"
         text-align: center
         padding-top: 5%
-        font-size: 2em
+        font-size: 3.5em
       h2#process
         padding-top: 1%
         text-align: left
@@ -350,7 +360,7 @@ ul.navigation
         padding-right: 5%
         padding-top: 5%
       padding-top: 40px
-      width: 900px
+      width: 70%
       margin-left: auto
       margin-right: auto
       h1
@@ -358,14 +368,14 @@ ul.navigation
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux
         font-family: "ff-enzo-web",sans-serif
         font-style: normal
         font-weight: bold
-        margin-left: 1px
+        margin-left: .1em
         font-size: 1.2em
         padding-top: 12%
         color: #CD2626
@@ -376,7 +386,7 @@ ul.navigation
       p
         clear: both
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2.3em
         font-weight: 400
         margin-top: 18px
         padding-bottom: 2%
@@ -385,22 +395,24 @@ ul.navigation
         font-family: "ff-tisa-sans-web-pro"
         text-align: center
         padding-top: 5%
-        font-size: 2em
+        font-size: 3.5em
       h2#process
         padding-top: 1%
         text-align: left
+
 
 .footer
   background-color: #EDEDED
   position: relative
   .logo
     text-align: center
-    padding-top: 3%
+    padding: 0 10px
     h1
-      opacity: .5
+      opacity: .6
       font-family: "ff-enzo-web",sans-serif
-      font-size: 1.4em
-      color: #CD2626
+      font-size: 2.4em
+      color: #3f3d32
+      padding-top: 18px
       span
         color: #3f3d32
         margin-left: -5px
@@ -408,13 +420,14 @@ ul.navigation
       text-decoration: none
       color: inherit
   h4
+    padding-top: 9px
     text-align: center
-    font-size: 1em
+    font-size: 1.5em
     font-family: "ff-tisa-sans-web-pro"
   p
-    padding-top: 1%
+    padding: 18px
     text-align: center
-    font-size: .8em
+    font-size: 1.3em
     font-family: "ff-tisa-sans-web-pro"
 
 // Forms
@@ -424,7 +437,7 @@ ul.navigation
     padding-bottom: 2%
     .welovequotes
       padding-top: 40px
-      width: 900px
+      width: 70%
       margin-left: auto
       margin-right: auto
       h1
@@ -432,7 +445,7 @@ ul.navigation
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux
@@ -449,7 +462,7 @@ ul.navigation
         margin-left: -5px
       p
         font-family: "skolar", serif
-        font-size: 1.3em
+        font-size: 2.3em
         font-weight: 400
         margin-top: 18px
         padding-bottom: 2%
@@ -461,7 +474,13 @@ ul.navigation
         font-size: 2em
 
   #form
-    width: 900px
+    #cancel
+      font-size: 2em
+      a
+        text-decoration: none
+      a:visited
+        color: inherit
+    width: 70%
     margin-left: auto
     margin-right: auto
     padding-bottom: 12%
@@ -475,7 +494,7 @@ ul.navigation
     input[type="password"]
     input[type="email"]
     textarea
-      width: 710px
+      width: 70%
 
     input[type="date"], input[type="datetime"], input[type="datetime-local"],
     input[type="email"], input[type="month"], input[type="number"], input[type="numeric"],
@@ -484,15 +503,15 @@ ul.navigation
     input[type="week"], textarea,
     select
       width: 400px
-      border: 1px solid #fff
+      border: .1em solid #fff
       padding: 6px 4px
       outline: none
-      -moz-border-radius: 14px
-      -webkit-border-radius: 14px
-      border-radius: 14px
+      -moz-border-radius: 1.4em
+      -webkit-border-radius: 1.4em
+      border-radius: 1.4em
       font-family: "ff-enzo-web",sans-serif
       font-weight: 600
-      font-size: 1em
+      font-size: 2.3em
       color: #3f3d32
       margin: 0 0 20px 0
       max-width: 100%
@@ -500,7 +519,7 @@ ul.navigation
       background: #ffffff
       &:focus
         padding-left: 2%
-        border: 1px solid #25cdcd
+        border: .1em solid #25cdcd
         color: #3f3d32
         -moz-box-shadow: 0 0 3px rgba(0,0,0,.2)
         -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2)
@@ -534,11 +553,11 @@ input[type="submit"]
   margin-right: auto
   color: #CD2626
   border: 1px solid #e5e5e5
-  -moz-border-radius: 14px
-  -ms-border-radius: 14px
-  -o-border-radius: 14px
-  -webkit-border-radius: 14px
-  border-radius: 14px
+  -moz-border-radius: 1.4em
+  -ms-border-radius: 1.4em
+  -o-border-radius: 1.4em
+  -webkit-border-radius: 1.4em
+  border-radius: 1.4em
   font-size: 2em
   padding: 6px 20px
   text-shadow: 1px 1px 1px #E5E5E5
@@ -566,7 +585,7 @@ input[type="submit"]
     padding-bottom: 12%
     .welovewhitespace
       padding-top: 40px
-      width: 900px
+      width: 70%
       margin-left: auto
       margin-right: auto
       #pullquote
@@ -587,7 +606,7 @@ input[type="submit"]
         font-style: normal
         font-weight: bold
         text-align: left
-        font-size: 2em
+        font-size: 3.5em
         padding-top: 12%
         color: #3f3d32
       span.ux#about
@@ -620,6 +639,49 @@ input[type="submit"]
         a
           text-decoration: none
           color: inherit
+
+#contact-page
+  .container
+    padding-bottom: 12%
+    .welovewhitespace
+      padding-top: 40px
+      width: 70%
+      margin-left: auto
+      margin-right: auto
+      h1#about
+        font-family: "ff-tisa-sans-web-pro"
+        font-style: normal
+        font-weight: bold
+        text-align: left
+        font-size: 3.5em
+        padding-top: 12%
+      span.ux#about
+        font-family: "ff-enzo-web",sans-serif
+        font-style: normal
+        font-weight: bold
+        margin-left: 1px
+        font-size: 1.2em
+        padding-top: 12%
+        color: #CD2626
+      span#about
+        font-family: "ff-enzo-web",sans-serif
+        margin-left: -5px
+      p
+        font-family: "skolar", serif
+        font-size: 1.3em
+        font-weight: 400
+        margin-top: 18px
+        padding-bottom: 2%
+      h2
+        padding-top: 5%
+        font-family: "ff-tisa-sans-web-pro"
+        text-align: center
+        padding-bottom: 5%
+        font-size: 2em
+        a
+          text-decoration: none
+          color: inherit
+
 #thanks
   h1#thanks
     font-family: "ff-tisa-sans-web-pro"
@@ -635,63 +697,3 @@ input[type="submit"]
     text-align: center
     font-size: 3em
     padding-top: 3%
-
-#contact-page
-  .container
-    padding-bottom: 12%
-    .welovewhitespace
-      padding-top: 40px
-      width: 900px
-      margin-left: auto
-      margin-right: auto
-      #pullquote
-        padding: 5%
-        .pquote
-          box-shadow: 10px 10px 30px #9b8a90
-          padding: 3%
-          text-align: center
-          font-size: 2em
-          background: #3f3d32
-          -moz-border-radius: 30px
-          -webkit-border-radius: 30px
-          border-radius: 30px
-          p
-            color: white
-      h1#about
-        font-family: "ff-tisa-sans-web-pro"
-        font-style: normal
-        font-weight: bold
-        text-align: left
-        font-size: 2em
-        padding-top: 12%
-        color: #3f3d32
-      span.ux#about
-        font-family: "ff-enzo-web",sans-serif
-        font-style: normal
-        font-weight: bold
-        margin-left: 1px
-        font-size: 1.2em
-        padding-top: 12%
-        color: #CD2626
-      span#about
-        font-family: "ff-enzo-web",sans-serif
-        color: #3f3d32
-        margin-left: -5px
-      p
-        font-family: "skolar", serif
-        font-size: 1.3em
-        font-weight: 400
-        margin-top: 18px
-        padding-bottom: 2%
-      p.whitespace
-        padding: 5%
-        text-align: center
-      h2
-        padding-top: 5%
-        font-family: "ff-tisa-sans-web-pro"
-        text-align: center
-        padding-bottom: 5%
-        font-size: 2em
-        a
-          text-decoration: none
-          color: inherit

@@ -27,6 +27,7 @@
         = f.input :phone_number, as: :phone
         = f.input :project_description, label: "Project description *", as: :text, :input_html => { :class => 'autogrow', :rows => 10, :cols => 50  }
         = f.action :submit, label: "Send"
-        = f.action :cancel, :as => :link, label: "cancel"
+        #cancel
+          = f.action :cancel, :as => :link, label: "cancel"
         %br
         %br

@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title
+      UXme. | Rails and UX Consulting
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    = render 'layouts/typekit'
+    = yield :head
+    / /[if IE]
+    /   = javascript_include_tag 'html5'
+  %body
+    #main
+      = render 'layouts/header2'
+      = render 'layouts/flash', flash: flash
+      = yield
+    = render 'layouts/footer'

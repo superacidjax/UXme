@@ -5,6 +5,7 @@ $(document).ready ->
     $("#headline-section").fadeOut 200
     $("#projects-section").fadeOut 200
     $("#process-section").fadeOut 200
+    $("#contact-section").fadeOut 200
     $('#flash').fadeOut 300
 
 $(document).ready ->
@@ -37,10 +38,10 @@ $(document).ready ->
   unless visited?
     $("#typing").typewriter()
     $("h4#byline").hide().delay(17500).fadeIn()
-    $("h5#parens").hide().delay(18500).fadeIn()
-    $("h1#icebergs").hide().delay(20000).fadeIn()
-    $.cookie "visited", "yes",
-      expires: 14
+    $("h5#parens").hide().delay(20500).fadeIn()
+    $("h1#icebergs").hide().delay(23000).fadeIn()
+    $("li#cta").hide().delay(25000).fadeIn()
+    $.cookie "visited", "yes", expires: 14
   if visited?
     $("#typing").fadeIn(200)
     $("h4#byline").fadeIn(200)
